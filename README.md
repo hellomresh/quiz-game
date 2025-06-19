@@ -33,14 +33,15 @@ Algo Arena is an interactive quiz game focused on key graph algorithms like **BF
 
 /algo-arena/
 │
-├── index.html # Main HTML page
-├── style.css # All styling and background animations
-├── script.js # Game logic and interactivity
-├── questions.js # All questions (BFS, DFS, A*)
-└── /images/ # Background slideshow images
-├── bg1.jpg
-├── bg2.jpg
-└── bg3.jpg
+├── index.html           # Main HTML structure
+├── style.css            # All styling and background slideshow
+├── script.js            # Quiz logic and flow
+├── questions.js         # All quiz questions (BFS, DFS, A*)
+└── images/
+    ├── bg1.jpg          # Background image 1
+    ├── bg2.jpg          # Background image 2
+    └── bg3.jpg          # Background image 3
+
 
 ---
 
