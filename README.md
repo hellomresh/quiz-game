@@ -49,4 +49,4 @@ Algo Arena is an interactive quiz game focused on key graph algorithms like **BF
 
 1. **Clone the repo**  
    ```bash
-   git clone https://github.com/your-username/algo-arena.git
+   git clone https://github.com/helloamresh/algo-arena.git
