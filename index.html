@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Algo Arena Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Slideshow -->
+  <div class="background-slideshow">
+    <div class="bg-slide" style="background-image: url('images/pexels-souvenirpixels-417074.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('images/pexels-pixabay-33109.jpg');"></div>
+    <div class="bg-slide" style="background-image: url('images/pexels-pixabay-33545.jpg');"></div>
+  </div>
+
+  <!-- Main Quiz Container -->
+  <div class="section" id="topicSelect">
+    <h2>Select a Topic</h2>
+    <div class="button-group">
+      <button class="topic-btn" data-topic="bfs">BFS</button>
+      <button class="topic-btn" data-topic="dfs">DFS</button>
+      <button class="topic-btn" data-topic="astar">A*</button>
+    </div>
+  </div>
+
+  <div class="section" id="learningSection" style="display: none;">
+    <h2 id="topicTitle">Topic</h2>
+    <div class="video-container">
+      <iframe id="topicVideo" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <button onclick="showDifficulty()">Start Quiz</button>
+  </div>
+
+  <div class="section" id="levelSelect" style="display: none;">
+    <h2>Select Difficulty</h2>
+    <div class="button-group">
+      <button class="diff-btn" data-difficulty="easy">Easy</button>
+      <button class="diff-btn" data-difficulty="medium">Medium</button>
+      <button class="diff-btn" data-difficulty="hard">Hard</button>
+    </div>
+    <h3>Final Boss</h3>
+    <div class="button-group">
+      <button class="boss-btn" data-topic="bfs" disabled>Final Boss (BFS)</button>
+      <button class="boss-btn" data-topic="dfs" disabled>Final Boss (DFS)</button>
+      <button class="boss-btn" data-topic="astar" disabled>Final Boss (A*)</button>
+    </div>
+    <button onclick="goBack()">Back to Topics</button>
+  </div>
+
+  <div class="section" id="quizSection" style="display: none;">
+    <div class="quiz-card">
+      <h3 id="questionText">Question</h3>
+      <div class="options" id="optionsBox"></div>
+    </div>
+  </div>
+
+  <div class="section" id="resultBox" style="display: none;">
+    <h2>Quiz Completed!</h2>
+    <p class="result">Your Score: <span id="scoreCount"></span></p>
+    <div id="sectionScore" class="scoreboard"></div>
+    <button onclick="restartQuiz()">Restart</button>
+  </div>
+
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
