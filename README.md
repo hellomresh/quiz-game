@@ -30,7 +30,7 @@ Algo Arena is an interactive quiz game focused on key graph algorithms like **BF
 ---
 
 ## 🗂 Folder Structure
-
+<pre>
 /algo-arena/
 │
 ├── index.html           # Main HTML structure
@@ -41,7 +41,7 @@ Algo Arena is an interactive quiz game focused on key graph algorithms like **BF
     ├── bg1.jpg          # Background image 1
     ├── bg2.jpg          # Background image 2
     └── bg3.jpg          # Background image 3
-
+</pre>
 
 ---
 
